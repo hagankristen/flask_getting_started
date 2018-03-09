@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=.
 set BUILDDIR=_build
-set SPHINXPROJ=MiniProjectCloudDeploy
+set SPHINXPROJ=MiniProjectCloudDeployment
 
 if "%1" == "" goto help
 
