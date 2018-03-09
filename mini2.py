@@ -5,6 +5,10 @@ app = Flask(__name__)
 
 @app.route("/name", methods=["GET"])
 def name():
+    """Creates URL ending in /name with json of name shown
+
+    :returns name1: json version of name
+    """
     name1 = {
     "name": "Kristen Hagan"
     }
@@ -12,7 +16,11 @@ def name():
 
 @app.route("/hello/<name>", methods=["GET"])
 def hello(name):
+    """Creates URL ending in /hello/<inputname> with hello message
 
+    :param name: takes input of name for hello message
+    :returns hi: json version of hello message and name
+    """
     hi = {
     "message": "Hello there, %s" %name,
     }
@@ -20,7 +28,12 @@ def hello(name):
 
 @app.route("/distance", methods=["POST"])
 def distance():
+    """POST that calcuates distance between input points
 
+    :param r: requests json of two point inputs
+    :returns data: json version of distance between points
+                    and point info
+    """
     r = request.get_json()
     a =  r["a"]
     b =  r["b"]
