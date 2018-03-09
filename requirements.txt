@@ -4,3 +4,5 @@ pytest-cov
 numpy
 flask
 requests
+gunicorn
+ipython

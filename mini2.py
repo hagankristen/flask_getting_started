@@ -9,6 +9,7 @@ def name():
 
     :returns name1: json version of name
     """
+
     name1 = {
     "name": "Kristen Hagan"
     }
@@ -21,6 +22,7 @@ def hello(name):
     :param name: takes input of name for hello message
     :returns hi: json version of hello message and name
     """
+
     hi = {
     "message": "Hello there, %s" %name,
     }
@@ -34,6 +36,7 @@ def distance():
     :returns data: json version of distance between points
                     and point info
     """
+    
     r = request.get_json()
     a =  r["a"]
     b =  r["b"]
